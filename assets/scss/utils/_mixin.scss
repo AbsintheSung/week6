@@ -1,0 +1,16 @@
+@mixin Phone{
+    //375px + 24
+    @media (max-width: (375px) ){
+        @content;
+    }
+}
+@mixin Small{
+    @media (max-width: (575px) ){
+        @content;
+    }
+}
+@mixin Medium{
+    @media (max-width: (767px ) ){
+        @content;
+    }
+}

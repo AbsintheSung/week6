@@ -1,0 +1,21 @@
+//footer
+.footer{
+  h2{
+      @include Medium {
+          font-size:24px !important;
+      }
+      @include Small {
+          font-size:16px !important;
+      }
+  }
+  h3{
+      @include Small {
+          font-size:14px !important;
+      }
+  }
+  p{
+      @include Small {
+          font-size:14px !important;
+      }
+  }
+}

@@ -1,0 +1,12 @@
+.title-box{
+    &__h2{
+        @include Phone {
+            font-size: 24px !important;
+        }
+    }
+    &__h3{
+        @include Phone {
+            font-size: 16px !important;
+        }
+    }
+}

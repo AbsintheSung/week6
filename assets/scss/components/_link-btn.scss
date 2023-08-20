@@ -1,0 +1,33 @@
+.link-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-btn:hover{
+    border-top: none !important;
+    border-bottom: none !important;
+    >span{
+        color:white;
+    }
+    background-color: #000000;
+}
+
+.link-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 4px;
+    height: 100%;
+    border-left: 4px solid #000000;
+}
+.link-btn:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 4px;
+    height: 100%;
+    border-left: 4px solid $minor;
+}

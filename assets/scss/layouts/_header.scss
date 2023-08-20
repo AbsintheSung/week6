@@ -1,0 +1,59 @@
+.logo-img{
+  width:53px;
+  height: 53px;
+  // vertical-align: middle;
+    @include Small{
+      width: 40px;
+      height: 40px;
+  }
+}
+.logo-1{
+  font-size: 32px;
+  font-weight: 400; 
+}
+.logo-2{
+  font-size: 16px;
+  font-weight: 700;
+}
+.search-box{
+  width: 335px;
+  > input{
+    width: 100%;
+    /* background-color: #F3F1E5; */
+    // font-family: 'Noto Serif TC';
+  }
+  > button{
+    width: 55px;
+    height: 55px;
+    // background-color: #030303;
+  }
+  @include Small{
+    width: 207px;
+    >button{
+        width: 39px;
+        height: 39px;
+    }
+  }
+}
+
+.listitem_span{
+  font-size: 18px;
+  font-weight: 400;
+  // font-family:'Yeseva One';
+}
+.nav-btn{
+  padding:1px 9px;
+}
+.nav-btn:focus{
+  box-shadow: none !important;
+}
+.nav-btn:hover{
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) !important;
+}
+
+.nav-list__item:hover{
+  a{
+    color: #9C9E18 !important;
+
+  }
+}

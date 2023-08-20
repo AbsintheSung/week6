@@ -1,0 +1,126 @@
+.home-bg{
+    width: 100%;
+    height:518px;
+    background-image: url('../../../assets/images/event/13.jpg');
+    background-position: center center;
+    background-size: cover;
+    @include Small {
+        height:350px;
+    }
+}
+
+.homelist__item{
+    > a{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0px;
+        >img{
+            width: 80px;
+            height: 80px;
+            @include Small {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        >span{
+            @include Small {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+.homelist__item:last-child{
+    >a{
+        >span{
+            @include Small {
+                font-size: 24px !important;
+            }
+        }
+    }
+}
+.homelist__item:hover{
+    a{
+        background-color:$minor !important;
+  
+    }
+}
+.homelist__item:last-child:hover{
+    a{
+        background-color:$main !important;
+        color:$minor !important;
+    }
+}
+
+
+
+.online-bg{
+    height: 100%;
+    background-image: url('../../../assets/images/event/online.jpg');
+    background-position: left 35%;
+    background-size: cover;
+}
+.online2-bg{
+    width: 100%;
+    height:158px;
+    padding-bottom: auto;
+    object-fit: cover;
+    object-position: left 35%;
+}
+.online-btn:hover{
+    span,i{
+        color:$minor !important;
+    }
+}
+
+
+.albums-card{
+    height: 100%;
+    position: relative;
+    > img{
+        margin-top: 16px;
+        width: 100%;
+        height: 274px;
+    }
+    >p{
+        font-size:18px
+    }
+}
+.albums-title{
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 9px 16px;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-4deg);
+    
+}
+
+.rotate-2{
+    transform:rotate(2deg);
+}
+.re-rotate-2{
+    transform:rotate(-2deg);
+}
+
+//區塊五
+.contact-card{
+    margin-top: 36px !important;
+    @include Medium {
+        margin-top: 8px !important;
+    }
+}
+.contact-card__right{
+    >div{
+        border-left:none !important ;
+        @include Medium {
+            border-left:2px solid $main !important ;
+        }
+    }
+}
+.contact-btn:hover{
+    span,i{
+        color:$minor !important;
+    }
+}
+

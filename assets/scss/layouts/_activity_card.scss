@@ -1,0 +1,6 @@
+.card-img{
+    height: 255px;
+    @include Small {
+        height: 210px;
+    }
+}
