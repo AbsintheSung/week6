@@ -1,0 +1,58 @@
+.page-btn{
+    &__pre{
+        margin-right: 4px;
+        > a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $main;
+            padding: 11px;
+        }
+    }
+    &__item{
+        margin: 0px 4px;
+        > a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $main;
+            padding: 8px 15px;
+        }
+    }
+    &__next{
+        margin-left: 4px;
+        > a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $main;
+            padding: 11px;
+        }
+    }
+
+    &__pre:hover{
+        background-color: $main ;
+        a{
+            color:$minor !important;
+        }
+    }
+    &__item:hover{
+        background-color: $main ;
+        a{
+            color:$minor !important;
+        }
+    }
+    &__next:hover{
+        background-color: $main ;
+        a{
+            color:$minor !important;
+        }
+    }
+}
+
+.page-btn__item:nth-child(2){
+    background-color: $main ;
+    a{
+        color:$minor !important;
+    }
+}

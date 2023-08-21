@@ -4,3 +4,28 @@
         height: 210px;
     }
 }
+.card-icon{
+    width: 24px;
+    height: 24px;
+}
+.card-line:hover{
+    text-decoration: underline !important;
+}
+.card-show{
+    position: relative;
+    >span{
+        z-index: 1;
+    }
+}
+.card-show:hover{
+    >span::before{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        left: -10px;
+        width: 25px;
+        height: 25px;
+        background-color: $minor;
+        border-radius: 50%;
+    }
+}

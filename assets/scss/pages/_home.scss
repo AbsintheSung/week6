@@ -1,3 +1,4 @@
+// 大圖區
 .home-bg{
     width: 100%;
     height:518px;
@@ -9,6 +10,7 @@
     }
 }
 
+// 區塊一
 .homelist__item{
     > a{
         width: 100%;
@@ -52,7 +54,7 @@
 }
 
 
-
+// 區塊三
 .online-bg{
     height: 100%;
     background-image: url('../../assets/images/event/online.jpg');
@@ -72,7 +74,7 @@
     }
 }
 
-
+//區塊四
 .albums-card{
     height: 100%;
     position: relative;
@@ -124,3 +126,54 @@
     }
 }
 
+//區塊六 home-footer
+.home-footer{
+    h2{
+        @include Medium {
+            font-size:24px !important;
+        }
+        @include Small {
+            font-size:16px !important;
+        }
+    }
+    h3{
+        @include Small {
+            font-size:14px !important;
+        }
+    }
+    p{
+        @include Small {
+            font-size:14px !important;
+        }
+    }
+  }
+
+
+//跑馬燈
+.swiper {
+    background-color: #000;
+  }
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  .swiper-slide {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3.2px;
+    width: auto;
+    color: #fbff22;
+    background: #000;
+    @include Medium {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    @include Small {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 16px;
+    }
+  }
+  
