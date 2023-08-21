@@ -1,9 +1,18 @@
+.activity-card{
+    // 解決 內文過多 導致跟其他卡片不等高問題
+    > li{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 .card-img{
     height: 255px;
     @include Small {
         height: 210px;
     }
 }
+
 .card-icon{
     width: 24px;
     height: 24px;
