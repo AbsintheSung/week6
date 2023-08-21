@@ -125,6 +125,11 @@
         color:$minor !important;
     }
 }
+.follow-link:hover{
+    span{
+        text-decoration: underline;
+    }
+}
 
 //區塊六 home-footer
 .home-footer{
