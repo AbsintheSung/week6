@@ -79,106 +79,6 @@
                     <span class="fw-bold" >
                       演出
                     </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      音樂
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      舞蹈
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      戲劇
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      音樂會
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      課程講座
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      社群活動
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      展覽
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      研討會
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      電影
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      電音派對
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      遊戲競技
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      親子
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      藝文活動
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      運動
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      交通旅遊
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      美食
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      資訊科技
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      聯誼
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      戶外
-                    </span>
-                </a>
-                <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-                    <span class="fw-bold" >
-                      線上活動
-                    </span>
                 </a> -->
             </div>
 
@@ -528,11 +428,6 @@
 
     
     <script>
-        // <a href="#" class="link-btn border border-start-0 border-1 border-dark text-center me-2 mb-2 link-dark" >
-        //     <span class="fw-bold" >
-        //         電音派對
-        //     </span>
-        // </a>
         let acrivityNav = document.querySelector('.acrivity-nav')
         const data = [
             {"link":"#","text":"演出"},
@@ -564,12 +459,12 @@
             return span
         }
         function create_alink(obj){
-            let a = document.createElement('a')
+            let a_link = document.createElement('a')
             let newSpan = createSpen(obj.text)
-            a.classList.add('link-btn','border' ,'border-start-0', 'border-1', 'border-dark' ,'text-center' ,'me-2' ,'mb-2' ,'link-dark')
-            a.href=obj.link
-            a.appendChild(newSpan)
-            return a 
+            a_link.href=obj.link
+            a_link.classList.add('link-btn','border' ,'border-start-0', 'border-1', 'border-dark' ,'text-center' ,'me-2' ,'mb-2' ,'link-dark')
+            a_link.appendChild(newSpan)
+            return a_link 
         }
         function mountLink(data){
             for(let i = 0 ; i < data.length;i++){
